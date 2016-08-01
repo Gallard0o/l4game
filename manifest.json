@@ -1,0 +1,6 @@
+{
+  "name": "l4game",
+  "short_name": "l4game",
+  "start_url": "/",
+  "display": "standalone"
+}
