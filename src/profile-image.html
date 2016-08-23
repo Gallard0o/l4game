@@ -1,0 +1,72 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+
+
+<dom-module id="profile-image">
+
+  <template>
+
+    <style>
+      :host {
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 40px 24px 16px 16px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+      .circle {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: #ddd;
+        color: #555;
+      }
+      .name{
+        font-family: Roboto Medium;
+        font-size: 14px;
+        color: #686c70;
+        margin: 0 0 0 16px;
+      }
+      .menu-perfil{
+        color: #686c70;
+      }
+      .close-drawer{
+        margin-left: auto;
+      }
+      iron-image{
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+      }
+    </style>
+
+    <iron-image sizing="cover"
+      src="http://lorempixel.com/600/400">
+    </iron-image>
+    <string class="name">Gallard0o</string >
+    <iron-icon class="menu-perfil" icon="arrow-drop-down"></iron-icon>
+    <iron-icon class="close-drawer" icon="chevron-left"></iron-icon>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'profile-image'
+
+    });
+
+  </script>
+
+</dom-module>
